@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>骨愈空间 - Services</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    #mobile-menu { display: none; position: absolute; top: 100%; right: 0; background: white; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-radius: 0.5rem; flex-direction: column; width: 200px; z-index: 20; }
+    #menu-btn { cursor: pointer; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md w-full z-10 fixed top-0">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center relative">
+      <h1 class="text-2xl font-bold">骨愈空间</h1>
+      <div class="space-x-4 md:space-x-6 hidden md:flex">
+        <a href="index.html" class="hover:text-blue-500">Home</a>
+        <a href="about.html" class="hover:text-blue-500">About Us</a>
+        <a href="services.html" class="hover:text-blue-500">Services</a>
+        <a href="gallery.html" class="hover:text-blue-500">Gallery</a>
+        <a href="contact.html" class="hover:text-blue-500">Contact Us</a>
+      </div>
+      <div class="md:hidden relative">
+        <span id="menu-btn">☰</span>
+        <div id="mobile-menu" class="flex flex-col">
+          <a href="index.html" class="px-4 py-2 hover:bg-gray-100">Home</a>
+          <a href="about.html" class="px-4 py-2 hover:bg-gray-100">About Us</a>
+          <a href="services.html" class="px-4 py-2 hover:bg-gray-100">Services</a>
+          <a href="gallery.html" class="px-4 py-2 hover:bg-gray-100">Gallery</a>
+          <a href="contact.html" class="px-4 py-2 hover:bg-gray-100">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.style.display = mobileMenu.style.display === 'flex' ? 'none' : 'flex';
+    });
+  </script>
+
+  <!-- Services Section -->
+  <section class="w-full min-h-screen flex flex-col items-center justify-start bg-gray-100 px-6 pt-20 pb-12">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl w-full">
+      <!-- 13 Service Boxes -->
+      <div class="bg-white p-6 rounded-2xl shadow-md">
+        <h3 class="text-xl font-semibold mb-2">服务项目 1</h3>
+        <p class="mb-2">价格: $50</p>
+        <p>时间: 30 分钟</p>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow-md">
+        <h3 class="text-xl font-semibold mb-2">服务项目 2</h3>
+        <p class="mb-2">价格: $60</p>
+        <p>时间: 45 分钟</p>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow-md">
+        <h3 class="text-xl font-semibold mb-2">服务项目 3</h3>
+        <p class="mb-2">价格: $70</p>
+        <p>时间: 60 分钟</p>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow-md">
+        <h3 class="text-xl font-semibold mb-2">服务项目 4</h3>
+        <p class="mb-2">价格: $50</p>
+        <p>时间: 30 分钟</p>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow-md">
+        <h3 class="text-xl font-semibold mb-2">服务项目 5</h3>
+        <p class="mb-2">价格: $60</p>
+        <p>时间: 45 分钟</p>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow-md">
+        <h3 class="text-xl font-semibold mb-2">服务项目 6</h3>
+        <p class="mb-2">价格: $70</p>
+        <p>时间: 60 分钟</p>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow-md">
+        <h3 class="text-xl font-semibold mb-2">服务项目 7</h3>
+        <p class="mb-2">价格: $50</p>
+        <p>时间: 30 分钟</p>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow-md">
+        <h3 class="text-xl font-semibold mb-2">服务项目 8</h3>
+        <p class="mb-2">价格: $60</p>
+        <p>时间: 45 分钟</p>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow-md">
+        <h3 class="text-xl font-semibold mb-2">服务项目 9</h3>
+        <p class="mb-2">价格: $70</p>
+        <p>时间: 60 分钟</p>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow-md">
+        <h3 class="text-xl font-semibold mb-2">服务项目 10</h3>
+        <p class="mb-2">价格: $50</p>
+        <p>时间: 30 分钟</p>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow-md">
+        <h3 class="text-xl font-semibold mb-2">服务项目 11</h3>
+        <p class="mb-2">价格: $60</p>
+        <p>时间: 45 分钟</p>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow-md">
+        <h3 class="text-xl font-semibold mb-2">服务项目 12</h3>
+        <p class="mb-2">价格: $70</p>
+        <p>时间: 60 分钟</p>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow-md">
+        <h3 class="text-xl font-semibold mb-2">服务项目 13</h3>
+        <p class="mb-2">价格: $80</p>
+        <p>时间: 75 分钟</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-800 text-white text-center py-6">
+    <p>© 2026 PromoSpark Services. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
