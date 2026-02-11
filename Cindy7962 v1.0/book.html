@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>骨愈空间 - Book Now</title>
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+body {
+  margin:0;
+  font-family: Arial, sans-serif;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.overlay { background-color: rgba(255,255,255,0.85); }
+/* Tablet */
+@media (max-width:1024px){
+  body{
+    background-attachment: scroll;
+  }
+}
+/* Mobile */
+@media (max-width:640px){
+  body{
+    background-attachment: scroll;
+  }
+}
+</style>
+</head>
+
+<body class="flex flex-col min-h-screen">
+
+<nav class="bg-white shadow-md fixed top-0 w-full z-50">
+<div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+<h1 class="text-2xl font-bold">骨愈空间</h1>
+<div class="hidden md:flex space-x-6">
+<a href="about.html">关于我们</a>
+<a href="services.html">服务项目</a>
+<!-- <a href="gallery.html" class="hover:text-blue-500">Gallery</a> -->
+<a href="contact.html">联系我们</a>
+<a class="text-blue-600 font-semibold pointer-events-none">预约表格</a>
+</div>
+<button id="menuBtn" class="md:hidden text-2xl">☰</button>
+</div>
+<div id="mobileMenu" class="hidden md:hidden bg-white">
+<a href="about.html" class="block px-4 py-2">关于我们</a>
+<a href="services.html" class="block px-4 py-2">服务项目</a>
+<!-- <a href="gallery.html" class="hover:text-blue-500">Gallery</a> -->
+<a href="contact.html" class="block px-4 py-2">联系我们</a>
+<a class="block px-4 py-2 text-blue-600 font-semibold">预约表格</a>
+</div>
+</nav>
+
+<section class="overlay flex-grow pt-24 pb-16 px-4">
+<h2 class="text-3xl font-bold text-center mb-10">Book Our Services</h2>
+<div class="max-w-4xl mx-auto bg-white shadow-lg rounded-2xl p-4">
+<iframe src="https://forms.gle/qhMUPFyS9YnEWCoa7" class="w-full h-[900px] rounded-xl border"></iframe>
+</div>
+</section>
+
+<footer class="bg-gray-800 text-white text-center py-1">
+© 2026 骨愈空间
+</footer>
+
+<script>
+menuBtn.onclick = () => mobileMenu.classList.toggle("hidden");
+</script>
+
+</body>
+</html>
